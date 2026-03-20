@@ -30,7 +30,8 @@ if ~exist(res_dir, 'dir'), mkdir(res_dir); end
 
 data_file = fullfile(data_dir, 'octopus_tentacle_data.csv');
 if ~isfile(data_file)
-    error(['Data file not found: %s\n''Run generate_data.m first to create it.'], data_file);
+    error(['Data file not found: %s\n' ...
+           'Place your CSV in the data/ folder and name it octopus_tentacle_data.csv'], data_file);
 end
 
 %% ── 1. LOAD DATA ─────────────────────────────────────────────────────────────
