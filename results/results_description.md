@@ -82,6 +82,7 @@ Note: f* means max frequency
 
 # Temporal Coefficients
 `Temporal_Coefficients.png`
+<img width="1875" height="625" alt="Temporal_Coefficients" src="https://github.com/user-attachments/assets/5c857dac-a6e8-49eb-a196-79680a115f53" />
 
 ## Mode 1 — blue (reaching)
 - Extension Phase (0–0.8 s): Characterized by a monotonic decay (0.085 to -0.05) representing the global elongation wave. This low-frequency transition (1.2 Hz) tracks the spatial commitment of the manipulator to its extended state.
