@@ -1,5 +1,7 @@
 # Raw Data Visualization
 `rawdata_visualization.png`
+<img width="1659" height="851" alt="rawdata_visualization" src="https://github.com/user-attachments/assets/587986b6-9c4a-44ec-9e7e-992563918b43" />
+
 This figure presents the raw kinematic data extracted from the octopus tentacle video, showing the centerline positions across 100 time frames (t = 0.00 s to t = 2.00 s) with a temporal resolution of 0.02 s (50 Hz sampling). The data comprises 20 equally spaced arc-length points along the tentacle, parameterized from base (s = 0) to tip (s = L).
 
 ## Left Panel: Tentacle motion vs time
