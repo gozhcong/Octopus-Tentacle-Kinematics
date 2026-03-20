@@ -19,5 +19,42 @@ This snapshot shows the bending and curling deformation during grasping, distinc
   - Green marker: Starting position at t = 0.00 s
   - Red marker: Grasping position at t = 0.80 s (maximum extension)
   - Black marker: Final position at t = 2.00 s
+- The tip trajectory shows curvature, indicating non-linear bending during the retraction phase
 
-The trajectory exhibits a slight curvature, indicating non-linear bending during the retraction phase
+# Proper Orthogonal Decomposition (POD) Output
+<img width="2005" height="782" alt="POD_Mode_Shapes" src="https://github.com/user-attachments/assets/c78d318f-2712-4170-a232-d06d2d07ac3f" />
+
+## Left Panel: 1st three POD modes
+- Mode 1 (Reaching line in blue)
+  - Displays 3D motion of the tentacle in reach-grasp-retract sequence at different timing
+  - This pattern represents global extension/retraction motion – the entire tentacle moves in the same direction
+  - The tentacle extends outward in the positive X-direction, reaches maximum extension around t = 0.8 s (grasping onset), then retracts toward the base
+
+- Mode 2 (Grasping line in red)
+  - The line peaks at distal region (s/L ≈ 0.7–0.9), with minimal contribution near the base
+  - This represents localized bending and curling concentrated in the distal half of the tentacle, corresponding to the curling motion used to wrap around and grasp objects
+  - Wehn the mode amplitude changes sign, it means there is bending in opposite directions depending on the temporal coefficient sign
+
+- Mode 3 (Fine manipulation in green)
+  - The line is more complicated and peaks near the tip (s/L ≈ 0.95), denoting localized fine adjustments, likely associated with the final stages of grasping and tip repositioning
+  - The sharp peak suggests that this mode captures the finger-like dexterity of the octopus's distal arm
+  
+## Centre Panel: Cumulative energy capture
+- Individual mode energy (blue bar)
+  - Mode 1 dominates overwhelmingly at 73.86%, confirming that reaching/retraction is the primary motion
+  - Mode 2 contributes 16.20% – A significant secondary motion pattern (likely curling/grasping)
+  - Mode 3 contributes 3.26% – Secondary bending or twisting for fine manipulation or out-of-plane motion
+  - Mode 4 contributes 4.79% – Higher-order curvature for localized deformations, possibly from object contact
+  - Higher modes (5 and above) contribute negligible energy (<0.15% collectively)
+ 
+- Cumulative energy (red line)
+  - Mode 1 misses 26% of the motion, the octopus hand can reach/retract, but cannot grasp properly
+  - With Mode 2, we still misses ~10% where grasping info is captured but fine manipulation missing
+  - Mode 3 captures fine tip manipulation
+  - Mode 4 sees cumulative energy at 98.11%, showing we capture all the previous actions and perhaps some out-of-plane motion
+  - Higher modes (5 and above) contribute negligibly
+
+## Right Panel: Mode 1 effect on shape
+- Mean Shape (Black Line) indicates the time-averaged tentacle configuration across all frames, and show a slightly curved resting posture
+- Max + (Blue Line) corresponds to the reaching/extending phase and tentacle extends further outward (positive X-direction)
+- Max - (Red Line) corresponds to the retracting phase and tentacle retracts toward the base (negative X-direction)
