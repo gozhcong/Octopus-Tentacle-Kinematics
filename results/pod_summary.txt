@@ -1,0 +1,29 @@
+============================================================
+                PROPER ORTHOGONAL DECOMPOSITION RESULTS
+============================================================
+Data dimensions: 20 spatial points × 100 time snapshots
+Sampling frequency: 50.00 Hz
+Total time: 1.98 s
+
+EIGENVALUES (% of variance):
+Mode 1: λ = 98.22% (cumulative: 98.22%)
+Mode 2: λ =  1.16% (cumulative: 99.39%)
+Mode 3: λ =  0.17% (cumulative: 99.56%)
+Mode 4: λ =  0.15% (cumulative: 99.71%)
+Mode 5: λ =  0.08% (cumulative: 99.79%)
+
+MODAL FREQUENCIES (from FFT):
+Mode 1 dominant frequency: 0.50 Hz
+Mode 2 dominant frequency: 1.00 Hz
+Mode 3 dominant frequency: 2.00 Hz
+
+VALIDATION METRICS:
+Reconstruction error with 3 modes: 1.4%
+Variance captured by 3 modes: 99.6%
+
+SOFT ROBOTICS DESIGN:
+Recommended actuators: 3
+- Mode 1: Longitudinal actuators (entire length)
+- Mode 2: Bending actuators (distal half)
+- Mode 3: Tip actuators (fine manipulation)
+============================================================
