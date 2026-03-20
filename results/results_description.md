@@ -5,3 +5,17 @@ This figure presents the raw kinematic data extracted from the octopus tentacle 
 ## Left Panel: Tentacle motion vs time
 - Displays 3D motion of the tentacle in reach-grasp-retract sequence at different timing
 - The tentacle extends outward in the positive X-direction, reaches maximum extension around t = 0.8 s (grasping onset), then retracts toward the base
+
+## Centre Panel: Phase snapshot
+- Extension (t = 0.00 s): Tentacle fully retracted, initial posture
+- Grasping (t = 0.80 s): Maximum extension, tip engages target object
+- Retraction (t = 1.30 s): Tentacle retracting, tip returning toward base
+This snapshot shows the bending and curling deformation during grasping, distinct from the linear extension/retraction motion
+
+## Right Panel: Tip trajectory
+- This graph traces the path of the tentacle tip (s = L) over the entire motion sequence
+  - Green marker: Starting position at t = 0.00 s
+  - Red marker: Grasping position at t = 0.80 s (maximum extension)
+  - Black marker: Final position at t = 2.00 s
+
+The trajectory exhibits a slight curvature, indicating non-linear bending during the retraction phase
