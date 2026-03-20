@@ -20,4 +20,5 @@ This repository contains MATLAB code for analyzing octopus tentacle motion data 
 ## Usage
 ```matlab
 cd src/
-octopus_pod_analysis
+generate_data 
+octopus_pod_analysis 
