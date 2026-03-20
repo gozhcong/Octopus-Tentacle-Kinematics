@@ -18,7 +18,11 @@ This repository contains MATLAB code for analyzing octopus tentacle motion data 
   - Visualization generation
 
 ## Usage
+### With your own dataset
+Place your CSV file in the `data/` folder and name it `octopus_tentacle_data.csv`.
+Ensure it follows the column format described in the [Data Format](#data-format) section below.
+
+Then in MATLAB, set your current folder to `src/` and run:
 ```matlab
-cd src/
-generate_data % Step 1: generate synthetic centerline data
-octopus_pod_analysis % Step 2: run POD + spectral analysis
+octopus_pod_analysis
+```
