@@ -22,6 +22,7 @@ This snapshot shows the bending and curling deformation during grasping, distinc
 - The tip trajectory shows curvature, indicating non-linear bending during the retraction phase
 
 # Proper Orthogonal Decomposition (POD) Output
+`POD_Mode_Shapes.png`
 <img width="2005" height="782" alt="POD_Mode_Shapes" src="https://github.com/user-attachments/assets/c78d318f-2712-4170-a232-d06d2d07ac3f" />
 
 ## Left Panel: 1st three POD modes
@@ -58,3 +59,23 @@ This snapshot shows the bending and curling deformation during grasping, distinc
 - Mean Shape (Black Line) indicates the time-averaged tentacle configuration across all frames, and show a slightly curved resting posture
 - Max + (Blue Line) corresponds to the reaching/extending phase and tentacle extends further outward (positive X-direction)
 - Max - (Red Line) corresponds to the retracting phase and tentacle retracts toward the base (negative X-direction)
+
+# Phase-windowed power spectral density (PSD) of a(t)
+`Frequency_Spectra.png`
+<img width="2005" height="1050" alt="Frequency_Spectra" src="https://github.com/user-attachments/assets/3ec01ca7-6b6f-4be1-b537-95a33b6ec735" />
+
+Note: f* means max frequency
+
+##  Column 1 — Extension (green, f 0–39), F* = 1.2 Hz
+- All three modes peak at f = 1.2 Hz* with a sharp spike and zero energy above 5 Hz.
+- This is the signature of a slow, globally-coordinated proximo-distal elongation wave. 
+- Indicates the entire arm is moving coherently during extension — the bending wave recruits spatial patterns from multiple modes simultaneously at the same pace.
+
+##  Column 2 — Grasping (purple, f 40–64), 
+- Mode 1: f* = 14 Hz at 8–16 Hz. Mode 1 still holds the most spatial energy (74%), so even during grasping it responds to the high-frequency sucker-adjustment oscillations at the distal end
+- Mode 2: f* = 10 Hz. It captures the mid-frequency tip-curl dynamics with the f* denoting the cyclic sucker contact oscillation during prey capture.
+- Mode 3: f* = 10 Hz with a secondary peak near 14 Hz. This indicates finer spatial variation along the curl zone and responds to both the 10 Hz and 14 Hz oscillation frequencies that were embedded in the grasping data.
+
+## Column 3 — Retraction (orange, f 65–99)
+- All three modes has f* = 4.3 Hz, signifying the decaying structural rebound after prey release — the tentacle oscillates freely as it retracts, which causes the spectral broadening around the natural frequency.
+- The PSD magnitudes are lower than during extension because retraction is a lower-energy phase with no active high-amplitude forcing.
