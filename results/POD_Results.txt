@@ -1,0 +1,29 @@
+============================================================
+        PROPER ORTHOGONAL DECOMPOSITION RESULTS
+============================================================
+Snapshot matrix:   60 DOF × 100 snapshots
+Sampling rate:     50.00 Hz  (freq. resolution: 0.50 Hz)
+Total duration:    1.98 s
+
+ENERGY PARTITION:
+  Mode 1:  73.86%  (cumulative:  73.86%)
+  Mode 2:  16.20%  (cumulative:  90.06%)
+  Mode 3:   4.79%  (cumulative:  94.85%)
+  Mode 4:   3.26%  (cumulative:  98.11%)
+  Mode 5:   1.05%  (cumulative:  99.16%)
+
+PHASE-WINDOWED DOMINANT FREQUENCIES:
+  Mode        Extension     Grasping      Retraction  
+  Mode 1       1.2           14.0          4.3           (Hz)
+  Mode 2       1.2           10.0          4.3           (Hz)
+  Mode 3       1.2           10.0          4.3           (Hz)
+
+VALIDATION:
+  3-mode reconstruction error:  5.6%
+  Variance captured (3 modes):  94.9%
+
+SOFT ROBOTICS DESIGN IMPLICATIONS:
+  Mode 1 (73.9% energy, ext f*=1.2 Hz): longitudinal — full length
+  Mode 2 (16.2% energy, grp f*=10.0 Hz): bending — distal half
+  Mode 3 (4.8% energy, ret f*=4.3 Hz): tip — fine manipulation
+============================================================
