@@ -66,16 +66,35 @@ This snapshot shows the bending and curling deformation during grasping, distinc
 
 Note: f* means max frequency
 
-##  Column 1 — Extension (green, f 0–39), F* = 1.2 Hz
+##  Column 1 — Extension (green, f = 0–39), F* = 1.2 Hz
 - All three modes peak at f = 1.2 Hz* with a sharp spike and zero energy above 5 Hz.
 - This is the signature of a slow, globally-coordinated proximo-distal elongation wave. 
 - Indicates the entire arm is moving coherently during extension — the bending wave recruits spatial patterns from multiple modes simultaneously at the same pace.
 
-##  Column 2 — Grasping (purple, f 40–64), 
+##  Column 2 — Grasping (purple, f = 40–64), 
 - Mode 1: f* = 14 Hz at 8–16 Hz. Mode 1 still holds the most spatial energy (74%), so even during grasping it responds to the high-frequency sucker-adjustment oscillations at the distal end
 - Mode 2: f* = 10 Hz. It captures the mid-frequency tip-curl dynamics with the f* denoting the cyclic sucker contact oscillation during prey capture.
 - Mode 3: f* = 10 Hz with a secondary peak near 14 Hz. This indicates finer spatial variation along the curl zone and responds to both the 10 Hz and 14 Hz oscillation frequencies that were embedded in the grasping data.
 
-## Column 3 — Retraction (orange, f 65–99)
+## Column 3 — Retraction (orange, f = 65–99)
 - All three modes has f* = 4.3 Hz, signifying the decaying structural rebound after prey release — the tentacle oscillates freely as it retracts, which causes the spectral broadening around the natural frequency.
 - The PSD magnitudes are lower than during extension because retraction is a lower-energy phase with no active high-amplitude forcing.
+
+# Temporal Coefficients
+`Temporal_Coefficients.png`
+
+## Mode 1 — blue (reaching)
+- Extension Phase (0–0.8 s): Characterized by a monotonic decay (0.085 to -0.05) representing the global elongation wave. This low-frequency transition (1.2 Hz) tracks the spatial commitment of the manipulator to its extended state.
+- Grasping Phase (0.8–1.3 s): Exhibits maximum volatility with high-amplitude excursions reaching -0.13. Despite its "reaching" label, Mode 1 captures this deformation due to its 74% spatial variance dominance. The 14 Hz oscillations align with the high-frequency dynamics of the distal tip curl.
+- Retraction Phase (1.3–2.0 s): Displays a damped 4 Hz oscillatory recovery toward the baseline. This signifies the structural rebound and transient stabilization as the arm returns to its rest-pose configuration.
+
+## Mode 2 — red (grasping)
+- Extension Phase (0–0.8 s): Maintains a negligible amplitude (±0.02) with minor oscillations around the zero-baseline, meaning that Mode 2 has minimal contribution to pure axial elongation.
+- Grasping Phase (0.8–1.3 s): Undergoes sharp activation with amplitudes scaling to ±0.06. The rapid sign inversions capture the 10 Hz sucker-contact oscillations, representing the distal bending required for the grasping wrap.
+- Retraction Phase (1.3–2.0 s): Exhibits an approximate decaying 4 Hz residual oscillation, indicating a multi-modal structural coupling during the arm's return to its rest-pose.
+
+## Mode 3 — green (fine)
+- maintains low amplitude, which is consistent with it holding only 4.8% of the total energy.
+- During extension, it shows a gentle hump peaking around t = 0.5 s, the fine spatial adjustment of the bending wave as the proximo-distal elongation travels along the arm.
+- During grasping, it becomes slightly more active with irregular oscillations, capturing the higher-spatial-frequency deformation in the curl zone t
+- During retraction, it settles quickly toward zero
