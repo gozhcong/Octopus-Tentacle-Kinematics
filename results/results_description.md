@@ -95,7 +95,22 @@ Note: f* means max frequency
 - Retraction Phase (1.3–2.0 s): Exhibits an approximate decaying 4 Hz residual oscillation, indicating a multi-modal structural coupling during the arm's return to its rest-pose.
 
 ## Mode 3 — green (fine)
-- maintains low amplitude, which is consistent with it holding only 4.8% of the total energy.
+- Maintains low amplitude, which is consistent with it holding only 4.8% of the total energy.
 - During extension, it shows a gentle hump peaking around t = 0.5 s, the fine spatial adjustment of the bending wave as the proximo-distal elongation travels along the arm.
 - During grasping, it becomes slightly more active with irregular oscillations, capturing the higher-spatial-frequency deformation in the curl zone t
 - During retraction, it settles quickly toward zero
+
+# Validation results
+`Validation_Results.png`
+  <img width="1875" height="782" alt="Validation_Results" src="https://github.com/user-attachments/assets/0f417e36-fad3-4b61-b052-714bb9bb2261" />
+
+# Left panel: Reconstruction error vs. No. of modes 
+- This plot shows how the reconstruction error decreases as more modes are included in the reconstruction
+- The error curve shows a steep drop from N=1 to N=3; But after N=3, the curve flattens, denoting diminishing returns in the error for reconstruction
+- The 5.6% error at N=3: with just three modes, the reconstructed tentacle shape deviates from the actual shape by only 5.6% on average. 
+
+# Right panel: Shape comparison at grasping phase
+- Do a visual comparison between the original tentacle shape and the 3-mode reconstruction at the critical grasping moment (t = 0.80 s).
+- The reconstructed shape overlays almost perfectly with the original, with overall bending profile is preserved and tip curvature during grasping is accurately reproduced
+
+This validates that 3 spatial modes—corresponding to reaching, grasping, and fine manipulation—are sufficient to capture the essential kinematics of the octopus tentacle for soft robotic design purposes.
