@@ -34,7 +34,7 @@ This snapshot shows the bending and curling deformation during grasping, distinc
 - Mode 2 (Grasping line in red)
   - The line peaks at distal region (s/L ≈ 0.7–0.9), with minimal contribution near the base
   - This represents localized bending and curling concentrated in the distal half of the tentacle, corresponding to the curling motion used to wrap around and grasp objects
-  - Wehn the mode amplitude changes sign, it means there is bending in opposite directions depending on the temporal coefficient sign
+  - When the mode amplitude changes sign, it means there is bending in opposite directions depending on the temporal coefficient sign
 
 - Mode 3 (Fine manipulation in green)
   - The line is more complicated and peaks near the tip (s/L ≈ 0.95), denoting localized fine adjustments, likely associated with the final stages of grasping and tip repositioning
